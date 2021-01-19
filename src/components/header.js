@@ -48,11 +48,11 @@ const HeaderMenuItemAccent = styled.li`
 export default () => {
   return (
     <HeaderContainer>
-      <HeaderTitle>The Programming Foundation</HeaderTitle>
+      <HeaderTitle><Link to="/">The Programming Foundation</Link></HeaderTitle>
       <ul>
-        <HeaderMenuItem><a href="https://www.theprogrammingfoundation.org/donate">Donate</a></HeaderMenuItem>
+        <HeaderMenuItem><Link to="/donate">Donate</Link></HeaderMenuItem>
         <HeaderMenuItem><a href="https://www.theprogrammingfoundation.org/blog">Blog</a></HeaderMenuItem>
-        <HeaderMenuItem><a href="https://www.theprogrammingfoundation.org/charter">Charter</a></HeaderMenuItem>
+        <HeaderMenuItem><Link to="/charter">Charter</Link></HeaderMenuItem>
         <HeaderMenuItemAccent><Link to="/learn">Learn</Link></HeaderMenuItemAccent>
       </ul>
     </HeaderContainer>
