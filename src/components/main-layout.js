@@ -15,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     line-height: 1.8;
     font-family: "Poppins";
+    margin: 0;
   }
 
   h1, h2, h3, h4, h5 {
@@ -48,10 +49,10 @@ const LayoutContainer = styled.div`
   padding: 15px;
   margin: 50px 0;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
 `;
 
-export default ({children}) => {
+export default ({children, bgImage}) => {
   return (
     <LayoutContainer>
       <StaticQuery
@@ -71,7 +72,7 @@ export default ({children}) => {
        ) }
       />      
     <GlobalStyle />
-    <Header></Header>
+    <Header bgImage={bgImage}></Header>
     <ContentContainer>{children}</ContentContainer>
     <Footer></Footer>
     </LayoutContainer>

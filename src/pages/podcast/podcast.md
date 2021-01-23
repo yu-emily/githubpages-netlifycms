@@ -1,5 +1,6 @@
 ---
 path: "/podcast"
+template: "main-pages"
 title: "Podcast"
 ---
 

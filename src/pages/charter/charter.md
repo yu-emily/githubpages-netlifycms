@@ -1,5 +1,6 @@
 ---
 path: "/charter"
+template: "main-pages"
 title: "Charter"
 ---
 

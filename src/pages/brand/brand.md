@@ -1,6 +1,8 @@
 ---
 path: "/brand"
+template: "main-pages"
 title: "Brand"
+image: "../images/9ca4b675-3da6-44b0-98c8-c9d481c31c4e.jpeg"
 ---
 
 ## Brand

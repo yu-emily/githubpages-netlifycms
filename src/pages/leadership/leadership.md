@@ -1,5 +1,6 @@
 ---
 path: "/leadership"
+template: "main-pages"
 title: "Leadership"
 ---
 

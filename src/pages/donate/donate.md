@@ -1,5 +1,6 @@
 ---
 path: "/donate"
+template: "main-pages"
 title: "Donate"
 ---
 

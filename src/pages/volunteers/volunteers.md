@@ -1,6 +1,8 @@
 ---
 path: "/volunteers"
+template: "main-pages"
 title: "Volunteering"
+image: "../images/611d7631-2eba-41b7-9164-07e5daac80f7.jpeg"
 ---
 
 ## Volunteering
