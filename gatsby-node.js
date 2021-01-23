@@ -23,6 +23,9 @@ exports.createPages = async ({ graphql, actions }) => {
             fields {
               slug
             }
+            frontmatter {
+              template
+            }
           }
         }
       }
@@ -32,7 +35,7 @@ exports.createPages = async ({ graphql, actions }) => {
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
-      component: path.resolve(`./src/templates/main-pages.js`),
+      component: path.resolve(`./src/templates/${node.frontmatter.template}.js`),
       context: {
         slug: node.fields.slug,
       },

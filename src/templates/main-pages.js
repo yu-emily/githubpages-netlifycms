@@ -4,9 +4,16 @@ import MainLayout from "../components/main-layout"
 
 export default function SiteTemplate({data}) {
   const { markdownRemark } = data;
-  const { frontmatter, html } = markdownRemark;  
+  const { html, frontmatter } = markdownRemark;
+  
+  let image;      
+  if(frontmatter.image == null){
+    image = ""
+  }else{
+    image = frontmatter.image.publicURL
+  }
   return (
-    <MainLayout>
+    <MainLayout bgImage={image}>
         <div
          dangerouslySetInnerHTML={{ __html: html }}
         >
@@ -17,9 +24,14 @@ export default function SiteTemplate({data}) {
 }
 
 export const pageQuery = graphql`
-  query($slug: String!) {
-    markdownRemark(frontmatter: { path: { eq: $slug } }) {
+  query($path: String!) {
+    markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
+      frontmatter {
+        image {
+          publicURL
+        }
+      }
     }
   }
 `;

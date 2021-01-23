@@ -1,5 +1,6 @@
 ---
 path: "/"
+template: "main-pages"
 title: "Home"
 ---
 

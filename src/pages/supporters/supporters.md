@@ -1,5 +1,6 @@
 ---
 path: "/supporters"
+template: "main-pages"
 title: "Supporters"
 ---
 

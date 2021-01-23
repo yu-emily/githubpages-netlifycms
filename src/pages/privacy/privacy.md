@@ -1,5 +1,6 @@
 ---
 path: "/privacy"
+template: "main-pages"
 title: "Privacy Policy"
 ---
 
