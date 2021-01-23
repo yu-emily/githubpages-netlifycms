@@ -1,16 +1,10 @@
-/* 
-Originally created by jonathanrdelgado from The-Programming-Foundation/tutorials
-*/
-
 import React from 'react';
 import styled from 'styled-components';
 
 const PostContainer = styled.div`
-  display: flex;
-  justify-content: start;
-  flex-wrap: wrap;
   width: 75%;
   margin: 0 auto;
+  max-width: 1200px;
 `;
 
 const ContentContainer = styled.div`

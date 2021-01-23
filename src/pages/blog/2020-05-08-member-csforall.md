@@ -3,7 +3,7 @@ template: "post-template"
 title: "We’re now a member of CSforALL"
 date: "2020-05-08"
 author: "Subhajeet Mukherjee"
-feature-image: "../images/ad6c37cd-5221-4139-91f9-91d79f1e3643.jpeg"
+feature-image: "../images/6a998c21-62ad-493b-a9ba-ba0a3f21d1f3.png"
 alt-text: "the programming foundation with csforall"
 excerpt: "Yay! The Programming Foundation is now a member of CSforALL!"
 ---

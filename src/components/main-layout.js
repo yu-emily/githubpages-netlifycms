@@ -49,7 +49,7 @@ const LayoutContainer = styled.div`
   padding: 15px;
   margin: 50px 0;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
 `;
 
 export default ({children, bgImage}) => {
