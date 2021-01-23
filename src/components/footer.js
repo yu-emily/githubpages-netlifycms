@@ -80,25 +80,28 @@ export default () => {
         <NavigationSubContainer>
           <NavigationHeader>Learn</NavigationHeader>
           <NavigationList>
-            <li><Link to="/lessons/os/unix">Unix</Link></li>
-            <li><Link to="/lessons/programming/c">C</Link></li>
-            <li><Link to="/lessons/programming/python">Python</Link></li>
+            <li><Link to="https://www.theprogrammingfoundation.org/operating-systems/blog-post-title-one-ek5em">Unix</Link></li>
+            <li><Link to="https://www.theprogrammingfoundation.org/programming/blog-post-title-one-6mbh3">C</Link></li>
+            <li><Link to="https://www.theprogrammingfoundation.org/programming/blog-post-title-two-wkm2z">Python</Link></li>
           </NavigationList>
         </NavigationSubContainer>
         <NavigationSubContainer>
           <NavigationHeader>About</NavigationHeader>
           <NavigationList>
-            <li><a href="https://www.theprogrammingfoundation.org/leadership">Leadership</a></li>
-            <li><a href="https://www.theprogrammingfoundation.org/supporters">Supporters</a></li>
-            <li><a href="https://www.theprogrammingfoundation.org/privacy">Privacy Policy</a></li>
+            <li><Link to="/leadership">Leadership</Link></li>
+            <li><Link to="/supporters">Supporters</Link></li>
+            <li><Link to="/brand">Brand</Link></li>
+            <li><Link to="/privacy">Privacy Policy</Link></li>
             <li><a href="echo@smarterus.org">Contact</a></li>
           </NavigationList>
         </NavigationSubContainer>
         <NavigationSubContainer>
           <NavigationHeader>Get Involved</NavigationHeader>
           <NavigationList>
-            <li><a href="https://www.theprogrammingfoundation.org/volunteers">Volunteering</a></li>
+            <li><Link to="/volunteers">Volunteering</Link></li>
             <li><a href="https://github.com/The-Programming-Foundation">Open source</a></li>
+            <li><Link to="/podcast">Podcast</Link></li>
+            <li><a href="https://us17.campaign-archive.com/home/?id=8ed970028d&u=2b5505306c208a54f7daff686">Newsletter</a></li>
           </NavigationList>
         </NavigationSubContainer>
       </NavigationContainer>

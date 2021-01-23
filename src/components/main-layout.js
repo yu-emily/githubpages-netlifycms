@@ -5,14 +5,16 @@ Originally created by jonathanrdelgado from The-Programming-Foundation/tutorials
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import { Helmet } from 'react-helmet';
+import { StaticQuery, graphql } from 'gatsby';
+import "@fontsource/poppins"
 
 import Header from './header';
 import Footer from './footer';
-import '../../assets/prism-theme.css';
 
 const GlobalStyle = createGlobalStyle`
   body {
     line-height: 1.8;
+    font-family: "Poppins";
   }
 
   h1, h2, h3, h4, h5 {
@@ -49,17 +51,25 @@ const LayoutContainer = styled.div`
   max-width: 1200px;
 `;
 
-export default ({ children, pageTitle, site }) => {
-  let title = site.siteMetadata.title;
-  if (pageTitle) {
-    title = `${title} - ${pageTitle}`;
-  }
-
+export default ({children}) => {
   return (
     <LayoutContainer>
-      <Helmet title={title}>
+      <StaticQuery
+        query={graphql`
+        query {
+          site {
+            siteMetadata {
+              title
+            }
+          }
+        }
+      `}
+       render={data => (
+        <Helmet title={data.site.siteMetadata.title}>
         <html lang="en" />
       </Helmet>
+       ) }
+      />      
     <GlobalStyle />
     <Header></Header>
     <ContentContainer>{children}</ContentContainer>
@@ -67,3 +77,4 @@ export default ({ children, pageTitle, site }) => {
     </LayoutContainer>
   );
 };
+

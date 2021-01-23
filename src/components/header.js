@@ -20,6 +20,10 @@ const HeaderContainer = styled.div`
 const HeaderTitle = styled.div`
   font-weight: 500;
   font-size: 2rem;
+  a {
+    text-decoration: none;
+    color: black;
+  }
 `;
 
 const HeaderMenuItem = styled.li`

@@ -7,16 +7,10 @@ module.exports = {
     },
     plugins: [
         {
-            resolve: `gatsby-plugin-typography`,
-            options: {
-              pathToConfigModule: `src/utils/typography`,
-            },
-        },
-        {
             resolve: `gatsby-source-filesystem`,
             options: {
               name: `site-pages`,
-              path: `${__dirname}/src/site-pages`,
+              path: `${__dirname}/src/pages`,
             },
         },
         `gatsby-plugin-sharp`,
