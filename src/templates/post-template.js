@@ -8,10 +8,11 @@ const BlogContainer = styled.div`
   background-color: #eeedeb;
 `;
 
-export default function SiteTemplate({data}) {
+export default function SiteTemplate({data, pageContext}) {
   const { markdownRemark } = data;
-  const { html, frontmatter } = markdownRemark;
-
+  const { html, frontmatter, fields } = markdownRemark;
+  const { prev, next } = pageContext;
+  
   let image;      
   if(frontmatter.image == null){
     image = ""
@@ -22,7 +23,7 @@ export default function SiteTemplate({data}) {
   return (
     <BlogContainer>
       <MainLayout bgImage={image}>
-          <PostLayout title={frontmatter.title} featureImage={frontmatter.feature_image.publicURL} altText={frontmatter.alt_text}>
+          <PostLayout prevPost={prev} nextPost={next} url={fields.slug} title={frontmatter.title} featureImage={frontmatter.feature_image.publicURL} altText={frontmatter.alt_text}>
             <div
             dangerouslySetInnerHTML={{ __html: html }}
             >
@@ -47,6 +48,9 @@ export const pageQuery = graphql`
         image {
           publicURL
         }
+      }
+      fields {
+        slug
       }
     }
   }
