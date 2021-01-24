@@ -3,7 +3,7 @@ template: post-template
 title: NetlifyCMS
 date: 2021-01-24T21:26:11.448Z
 author: Emily Yu
-feature-image: gatsby-netlifycms.jpeg
+feature-image: ../images/gatsby-netlifycms.jpeg
 alt-text: NetlifyCMS
 excerpt: Gatsby with NetlifyCMS
 ---

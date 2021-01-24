@@ -20,7 +20,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Author", name: "author", widget: "string" }
-      - { label: "FeatureImage", name: "feature-image", widget: "image" }
+      - { label: "FeatureImage", name: "feature-image", widget: "image", default: "../images/9c6214ee-daf2-41cc-9de9-7b929319707f.png" }
       - { label: "ImageAltText", name: "alt-text", widget: "string" }
       - { label: "Excerpt", name: "excerpt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
