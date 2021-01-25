@@ -8,8 +8,8 @@ collections:
     folder: "src/pages/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    media_folder: "src/pages/images"
-    public_folder: "src/pages/images"
+    media_folder: "../images"
+    public_folder: "../images"
     path: "{{year}}-{{month}}-{{day}}-{{title}}"
     editor:
       preview: true
