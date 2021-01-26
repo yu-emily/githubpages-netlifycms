@@ -5,7 +5,7 @@ date: 2021-01-26T19:35:39.622Z
 author: Emily Yu
 feature-image: ../images/netlifycms.png
 alt-text: NetlifyCMS logo
-excerpt: Talking about implementing NetlifyCMS.
+excerpt: Talking about implementing NetlifyCMS with Gatsby.
 ---
 From **Gatsby - Sourcing from Netlify CMS**\
 \
