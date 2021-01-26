@@ -1,8 +1,9 @@
 backend:
-  name: git-gateway
-  branch: netlify-cms
+  name: github
+  repo: yu-emily/githubpages-netlifycms
+  branch: deploy-netlifycms
+  site_domain: upbeat-mcnulty-8c24f8.netlify.com
 
-local_backend: true
 media_folder: src/pages/images
 
 collections:
@@ -17,7 +18,7 @@ collections:
     editor:
       preview: false
     fields:
-      - {label: "Layout", name: "template", widget: "hidden", default: "post-template"}
+      - { label: "Layout", name: "template", widget: "hidden", default: "post-template"}
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Author", name: "author", widget: "string" }
