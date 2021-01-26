@@ -1,4 +1,5 @@
 module.exports = {
+    pathPrefix: "/githubpages-netlifycms",
     siteMetadata: {
         siteUrl: 'https://www.theprogrammingfoundation.org/',
         author: 'Subhajeet Mukherjee',
