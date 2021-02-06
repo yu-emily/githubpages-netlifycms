@@ -4,6 +4,7 @@ backend:
   branch: deploy-netlifycms
   site_domain: upbeat-mcnulty-8c24f8.netlify.com
 
+publish_mode: editorial_workflow
 media_folder: src/pages/images
 
 collections:
