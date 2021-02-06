@@ -1,0 +1,29 @@
+backend:
+  name: github
+  repo: yu-emily/githubpages-netlifycms
+  branch: deploy-netlifycms
+  site_domain: upbeat-mcnulty-8c24f8.netlify.com
+
+publish_mode: editorial_workflow
+media_folder: src/pages/images
+
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    folder: 'src/pages/blog'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    media_folder: '/{{media_folder}}'
+    public_folder: '../images'
+    path: '{{year}}-{{month}}-{{day}}-{{title}}'
+    editor:
+      preview: false
+    fields:
+      - { label: "Layout", name: "template", widget: "hidden", default: "post-template"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "FeatureImage", name: "feature-image", widget: "image", default: "../images/9c6214ee-daf2-41cc-9de9-7b929319707f.png" }
+      - { label: "ImageAltText", name: "alt-text", widget: "string" }
+      - { label: "Excerpt", name: "excerpt", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
